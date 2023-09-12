@@ -1,0 +1,92 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply box-sizing border-box to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Set font and background color */
+body {
+  font-family: "Courier New", monospace;
+  color: #00ff41;
+  background-color: black;
+}
+
+/* Center content vertically and horizontally */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Canvas for matrix background */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Header styling */
+header {
+  max-width: 800px;
+  font-size: 2em;
+  text-align: center;
+  animation: flash 15s infinite;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #00ff41;
+  z-index: 2;
+}
+
+/* Grid layout for dl elements */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Apply animation to loading elements */
+.loading {
+  animation: flash 1.5s infinite;
+}
+
+/* Flash animation */
+@keyframes flash {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+dl {
+  padding-left: 20px;
+}
+
+dt {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+dd {
+  margin-left: 0;
+  font-size: 1rem;
+}

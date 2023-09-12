@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading...</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <canvas></canvas>
+    <header>
+        Welcome to <span class="hostname"></span>
+        <div class="grid">
+            <dl>
+                <dt>Distribution:</dt>
+                <dd id="distro" class="loading"></dd>
+                <dt>Kernel Version:</dt>
+                <dd id="kernelVersion" class="loading"></dd>
+                <dt>Server Memory:</dt>
+                <dd id="serverMemory" class="loading"></dd>
+                <dt>CPU Load:</dt>
+                <dd id="cpuLoad1Min" class="loading"></dd>
+                <dd id="cpuLoad5Min" class="loading"></dd>
+                <dd id="cpuLoad15Min" class="loading"></dd>
+
+                <dt>Server Uptime:</dt>
+                <dd id="serverUptime" class="loading"></dd>
+            </dl>
+            <dl>
+                <dt>Browser:</dt>
+                <dd id="browserInfo" class="loading"></dd>
+                <dt>Screen Resolution:</dt>
+                <dd id="screenResolution" class="loading"></dd>
+                <dt>Platform:</dt>
+                <dd id="platform" class="loading"></dd>
+            </dl>
+        </div>
+    </header>
+
+    <script src="js/animations.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
