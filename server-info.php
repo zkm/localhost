@@ -25,5 +25,5 @@ echo json_encode([
     'uptime' => trim($uptime),
     'hostname' => $hostname,
     'kernelVersion' => $kernelVersion,
-    'distro' => str_replace('"', '', $distro)  // Remove quotation marks around the distro name
+    'distro' => str_replace('"', '', $distro)
 ]);

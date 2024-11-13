@@ -24,7 +24,7 @@ window.onload = function () {
       return response.json();
     })
     .then((data) => {
-      document.title = `Welcome to ${data.hostname}`;
+      document.title = `Welcome to ${data.distro}`;
 
       setContentAndRemoveLoading("serverMemory", data.memory);
 
