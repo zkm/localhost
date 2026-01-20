@@ -1,10 +1,12 @@
 <?php
 header('Content-Type: application/json');
 
-$memory = shell_exec("free -m | awk 'NR==2{printf \"%s/%sMB (%.2f%%)\", $3,$2,$3*100/$2 }'");
-list($usedMemoryMB, $totalMemoryMB) = explode('/', trim($memory));
-$usedMemoryGB = number_format($usedMemoryMB / 1024, 2);
-$totalMemoryGB = number_format($totalMemoryMB / 1024, 2);
+$memInfo = shell_exec("free -m | awk 'NR==2{print $3,$2}'");
+$memParts = explode(' ', trim($memInfo));
+$usedMemoryMB = isset($memParts[0]) ? (int)$memParts[0] : 0;
+$totalMemoryMB = isset($memParts[1]) ? (int)$memParts[1] : 0;
+$usedMemoryGB = $totalMemoryMB > 0 ? number_format($usedMemoryMB / 1024, 2) : 0;
+$totalMemoryGB = $totalMemoryMB > 0 ? number_format($totalMemoryMB / 1024, 2) : 0;
 
 $cpuLoad = sys_getloadavg();
 $cpuLoadFormatted = [
