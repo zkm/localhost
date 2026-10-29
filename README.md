@@ -1,5 +1,12 @@
 # Localhost Landing Page
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-663399?logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![PHP server info](https://img.shields.io/badge/PHP-server%20info-777BB4?logo=php&logoColor=white)
+
 ![Project Preview](screenshot.png)
 
 A simple localhost landing page with server information and a binary matrix animation. This repository provides a basic structure for a landing page that displays server details and includes an engaging visual element.
